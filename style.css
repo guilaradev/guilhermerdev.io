@@ -167,7 +167,7 @@ video {
 	position: fixed; 
 	right: 0; 
 	bottom: 0;
-    filter: blur(2px) grayscale(0.6);
+    filter: blur(1.5px) grayscale(0.6) ;
 	min-width: 100%; 
 	min-height: 100%;
 	width: auto; 
