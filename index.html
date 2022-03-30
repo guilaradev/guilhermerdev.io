@@ -1,375 +1,428 @@
+
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>DEV | Guilherme Lara</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />      <link rel="stylesheet" href="vendor/owl.carousel.min.css">
-      <link rel="stylesheet" href="vendor/owl.theme.default.min.css">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-      <link rel="stylesheet" href="./style.css">
-   </head>
-   <body>
-      <!-- header area -->
-      <header id="header">
-         <div class="row m-0">
-            <div class="col-3 bgcolor-nav">
-               <nav class="primary-nav navbar-expand-md">
-                  <div class="site-title text-center text-light py-5">
-                  </div>
-                  <div class="d-flex flex-column">
-                     <a href="#home" class="nav-item nav-link text-white-50 font-staat font-size-16 active">Inicio</a>
-                     <a href="#about_me" class="nav-item nav-link text-white-50 font-staat font-size-16 active">Sobre</a>
-                     <a href="#services" class="nav-item nav-link text-white-50 font-staat font-size-16 active">Skills</a>
-                     <a href="#serviços" class="nav-item nav-link text-white-50 font-staat font-size-16 active">Serviços</a>
-                     <a href="#portfolio" class="nav-item nav-link text-white-50 font-staat font-size-16 active">Portfolio</a>
-                     <a href="#footer" class="nav-item nav-link text-white-50 font-staat font-size-16 active">Contato</a>
-                  </div>
-               </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Willy Wonkas - Personal Portfolio Website Template" />
+	<meta name="keywords" content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard" />
+	<meta name="author" content="willy wonka" />
+    <title>Guilherme Lara Portfolio</title>
+  <!--favicon-img--> 
+   <link rel="icon" type="image/png" href="images/favicon.png">
+   <!--favicon-img-->
+   <!--main css file should not be removed -->
+    <link rel="stylesheet" href="css/index.css">
+    <!--main css file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+</head>
+<body>
+    <!--contains all the div-->
+    <div id="all">
+    <!--mouse  follower-->
+        <div class="cursor"></div>
+    <!--mouse  follower-->
+    <!--loader-->
+        <div id="loader">
+            <span class="color">Guilherme</span>Lara 
+        </div>
+    <!--loader-end-->
+    <!--link-screen-->
+        <div id="breaker">
+        </div>
+        <div id="breaker-two">
+        </div>
+    <!--link-screen-->
+        <!--Main-Section-->
+        <!--Navigator-fullscreen-->
+        <div id="navigation-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
             </div>
-         </div>
-         <button class="toggle-button"><span style="color:#fff "class="fas fa-bars fa-2x"></span></button>
-         <div class="social">
-            <span class="mr-3"><i class="fab fa-facebook-f"><a href=""></a></i></span>
-            <span class="mr-3"><i class="fab fa-twitter"></i></span>
-            <span class="mr-3"><i class="fab fa-instagram"></i></span>
-            <span class="mr-3"><i class="fab fa-github"></i></span>
-            <span class="mr-3"><i class="fab fa-linkedin"></i></span>
-            <span class="mr-3"><i class="fab fa-dribbble"></i></span>
-         </div>
-      </header>
-      <!-- #header area -->
-      <main id="site-main">
-         <div class="row m-0">
-            <div class="col-md-9 offset-md-3 px-0">
-               <!-- site-banner area -->
-               <section class="site-banner" id="home">
-                  <div class="banner-area">
-                     <video playsinline autoplay muted loop poster="assets/background.jpg" id="bg_video">
-                        <source src="assets/video-background.mp4" type="video/mp4">
-                     </video>
-                     <div class="author text-center">
-                        <div class="author-img"></div>
-                        <h1 class="text-white font-staat font-size-40 text-uppercase py-3">Guilherme Lara</h1>
-                        <h5 class="text-white font-staat font-size-27">Eu sou <span id="typed"></span></h5>
-                     </div>
-                  </div>
-               </section>
-               <!-- #site-banner area -->
-               <!-- about me area -->
-               <section class="about px-4 " id="about_me">
-                  <div class="me py-5">
-                     <h5 class="text-uppercase font-staat font-size-16 text-muted">Informações</h5>
-                     <h1 class="text-uppercase font-staat font-size-34">Sobre Mim</h1>
-                  </div>
-                  <div class="row m-0">
-                     <div class="col-sm-5 pl-0">
-                        <img src="./assets/new-foto.jpg" alt="profile image" class="img-fluid">
-                     </div>
-                     <div class="col-sm-6">
-                        <h6 class="text-uppercase font-staat font-size-16 text-muted"></h6>
-                        <!-- <h5 class="font-ram font-size-20 py-2">Eu sou Guilherme Lara , <span id="typed_2"></span></h5>-->
-                        <p class="font-staat text-black-50 py-2">
-                           Olá, meu nome é Guilherme Lara, sou desenvolvedor de sistemas e iniciei minha vida na área
-                           da programação como Front-End, apoś alguns anos de experiência resolvi ir para a área de <strong>Back-End</strong>.</br>
-                           Hoje estou em busca de novos conhecimentos na área de <strong>I.A , M.L, Data Science e Engenharia de Software</strong>.</br>
-                           Sou cursor de Ciência da Computação na Unip Bauru.</br>
-                        </p>
-                        <div class="d-flex flex-row flex-wrap justify-content-between py-4">
-                           <a style="font-size: 25px; color: #4F4F4F;" href="https://www.facebook.com/gui.a.lara" target="_blank"><span class="mr-2"><i class="fab fa-facebook-f"></i></span></a>
-                           <a style="font-size: 25px; color: #4F4F4F;" href="https://twitter.com/guilaradev" target="_blank"><span class="mr-2"><i class="fab fa-twitter"></i></span></a>
-                           <a style="font-size: 25px; color: #4F4F4F;" href="https://www.instagram.com/guilaradev/?hl=pt-br" target="_blank"><span class="mr-2"><i class="fab fa-instagram"></i></span></a>
-                           <a style="font-size: 25px; color: #4F4F4F;" href="https://github.com/guilaradev" target="_blank"><span class="mr-2"><i class="fab fa-github"></i></span></a>
-                           <a style="font-size: 25px; color: #4F4F4F;" href="https://www.linkedin.com/in/guilaradev/" target="_blank"><span class="mr-2"><i class="fab fa-linkedin"></i></span></a>
-                           <a style="font-size: 25px; color: #4F4F4F;" href="https://api.whatsapp.com/send?phone=5514996430356" target="_blank"><span class="mr-2"><i class="fas fa-phone"></i></span></a>
-                        </div>
-                        <button class="curriculo btn btn-dark text-uppercase mr-3 mb-2"><a class="cv"  style="text-decoration:none; color:#fff;" href="https://drive.google.com/file/d/1tpD-kXzOBu3VYnzyVRjom-wXVDnCCFWm/view" target="_blank">Curriculum Vitae</a></button>
-                     </div>
-                  </div>
-               </section>
-               <!-- #about me area -->
-               <!-- ability -->
-               <section class="skill service-bground px-4 py-5 bg-light" id="services">
-                  <div class="ability py-3">
-                     <h5 class="text-uppercase font-staat font-size-16 text-muted">Habilidades</h5>
-                     <h1 class="text-uppercase font-staat font-size-34">Meus Conhecimentos</h1>
-                  </div>
-                  <div class="row">
-                     <div class="col-sm-6 pl-4">
-                        <p class="font-staat font-size-16 text-black-50 pb-3">
-                           Tenho Cursos de programação certificados voltados a front-end e back-end.
-                        </p>
-                        <p class="font-staat font-size-16 text-black-50">
-                           • Certificado de Bussines Process Management pela SoftExpert <br>• Certificado de Gestão de Processos pela Escola Nacional de Administração Publica <br>• Certificado de MySQL<br> • Certificado de Python<br> • Certificado POO
-                           Java
-                           <br> • Certificado Data Science - Visualização de Dados em Python<br> • Certificado PHP + POO PHP <br>• Certificado Algoritmos <br>• Certificado de Pentest Wireless (Redes de Computadores)<br> • Certificado de HTML/CSS3/Java Script
-                        </p>
-                     </div>
-                     <div class="col-sm-6 bars">
-                        <div class="bar-1 mb-4">
-                           <div class="d-flex flex-row justify-content-between">
-                              <p class="font-staat font-size-16">Java <i class="fa-brands fa-java"></i></p>
-                              <span class="font-ram font-size-16"></span>
-                           </div>
-                           <div class="progress" style="height: 3px;">
-                              <div class="progress-bar bgcolor-black" role="progressbar" style="width:45%">
-                              <i class="fa-brands fa-java"></i></div>
-                           </div>
-                        </div>
-                        <div class="bar-1 mb-4">
-                           <div class="d-flex flex-row justify-content-between">
-                              <p class="font-staat font-size-16">Python <i class="fa-brands fa-python"></i></p>
-                              <span class="font-ram font-size-16"></span>
-                           </div>
-                           <div class="progress" style="height: 3px;">
-                              <div class="progress-bar bgcolor-black" role="progressbar" style="width:55%"></div>
-                           </div>
-                        </div>
-                        <div class="bar-1 mb-4">
-                           <div class="d-flex flex-row justify-content-between">
-                              <p class="font-staat font-size-16">Banco de Dados <i class="fa-solid fa-database"></i></p>
-                              <span class="font-ram font-size-16"></span>
-                           </div>
-                           <div class="progress" style="height: 3px;">
-                              <div class="progress-bar bgcolor-black" role="progressbar" style="width:65%"></div>
-                           </div>
-                        </div>
-                        <div class="bar-1 mb-4">
-                           <div class="d-flex flex-row justify-content-between">
-                              <p class="font-staat font-size-16">NodeJs <i class="fa-brands fa-node-js"></i></p>
-                              <span class="font-ram font-size-16"></span>
-                           </div>
-                           <div class="progress" style="height: 3px;">
-                              <div class="progress-bar bgcolor-black" role="progressbar" style="width:35%"></div>
-                           </div>
-                        </div>
-                        
-                        <div class="bar-1 mb-4">
-                           <div class="d-flex flex-row justify-content-between">
-                              <p class="font-staat font-size-16">JavaScript  <i class="fa-brands fa-js"></i></p>
-                              <span class="font-ram font-size-16"></span>
-                           </div>
-                           <div class="progress" style="height: 3px;">
-                              <div class="progress-bar bgcolor-black" role="progressbar" style="width:65%"></div>
-                           </div>
-                        </div>
-                        <div class="bar-1 mb-4">
-                           <div class="d-flex flex-row justify-content-between">
-                              <p class="font-staat font-size-16">PHP  <i class="fa-brands fa-php"></i></p>
-                              <span class="font-ram font-size-16"></span>
-                           </div>
-                           <div class="progress" style="height: 3px;">
-                              <div class="progress-bar bgcolor-black" role="progressbar" style="width:65%"></div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </section>
-               <!-- #ability -->
-               <!-- services -->
-               <section class="services-area px-4 py-5" id="serviços">
-                  <div class="do py-5">
-                     <h5 class="text-uppercase font-staat font-size-16 text-muted">Oque eu faço?</h5>
-                     <h1 class="text-uppercase font-staat font-size-34">Serviços</h1>
-                  </div>
-                  <div class="row">
-                     <div class="col-md-4 col-sm-6 mb-4 text-center">
-                        <div class="panel border p-4">
-                           <span class="icon text-secondary"><i class="fas fa-laptop fa-3x"></i></span>
-                           <h4 class="font-staat py-4">Web Design</h4>
-                           <p class="font-staat font-size-16 text-black-50">
-                              Elaboração de layouts para sites e sistemas gerenciais(ERP's).
-                           </p>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6 mb-4 text-center">
-                        <div class="panel border p-4">
-                           <span class="icon text-secondary"><i class="fas fa-code fa-3x"></i></span>
-                           <h4 class="font-staat py-4">Desenvolvimento</h4>
-                           <p class="font-staat font-size-16 text-black-50">
-                              Desenvolvimento de sistemas, e-commerces usando as melhores tecnologias para tais.
-                           </p>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6 mb-4 text-center">
-                        <div class="panel border p-4">
-                           <span class="icon text-secondary"><i class="fas fa-comment fa-3x"></i></span>
-                           <h4 class="font-staat py-4">Consultoria</h4>
-                           <p class="font-staat font-size-16 text-black-50">
-                              Consultorias para sites e suas funcionalidades para melhores aplicações de manutenções e diagramações.
-                           </p>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6 mb-4 text-center">
-                        <div class="panel border p-4">
-                           <span class="icon text-secondary"><i class="fas fa-share-alt fa-3x"></i></span>
-                           <h4 class="font-staat py-4">Business Partner </h4>
-                           <p class="font-staat font-size-16 text-black-50">
-                              Gestor de Negócios em sistemas de BPM para melhor gestão empresarial, tendo como foco a valorização do tempo por processos.
-                           </p>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6 mb-4 text-center">
-                        <div class="panel border p-4">
-                           <span class="icon text-secondary"><i class="fas fa-database fa-3x"></i></span>
-                           <h4 class="font-staat py-4">Banco de Dados</h4>
-                           <p class="font-staat font-size-16 text-black-50">
-                              Gerencia de Banco de Dados com o uso das ferramentas adequadas a cada sistema.
-                           </p>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6 mb-4 text-center">
-                        <div class="panel border p-4">
-                           <span class="icon text-secondary"><i class="fas fa-terminal fa-3x"></i></span>
-                           <h4 class="font-staat py-4">Segurança da Informação</h4>
-                           <p class="font-staat font-size-16 text-black-50">
-                              Segurança do sistema utilizando criptografias no Banco de Dados.
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </section>
-               <!-- #services -->
-               <!-- Portifólio -->
-
-               <section class="portfolio px-4 py-5" id="portfolio">
-                  <div class=" do py-5">
-                     <h5 class="text-uppercase font-staat font-size-16 text-muted">Meu</h5>
-                     <h1 class="text-uppercase font-staat font-size-34">Portfolio</h1>
-                  </div>
-                  <div class="row">
-                     <div class=" col-md-3 card text-center work py-5 px-4" id="portfolio" style="width: 18rem;">
-                        <img class="card-img-top" src="sistemaDjango.png" alt="">
-                        <div class="card-body">
-                        <h5 class="card-title">Sistema simples de galeria de fotos
-                        </h5>
-                        <p class="card-text">Site criado em Python com Django integrando AWS S3</p>
-                        <a href="https://github.com/guilaradev/aws-s3-jurid" target="_blank" class="btn btn-primary">Acessar</a>
-                        </div>
-                     </div>
-                     <div class=" col-md-3 card text-center work py-5 px-4" id="portfolio" style="width: 18rem;">
-                        <img class="card-img-top" src="memoryTest.png" alt="">
-                        <div class="card-body">
-                        <h5 class="card-title">Sistema simples para verificar a memoria do computador</h5>
-                        <p class="card-text">Criado em NodeJs, roda direto no console.</p>
-                        <a href="https://github.com/guilaradev/StatsComputerMemory" target="_blank" class="btn btn-primary">Acessar</a>
-
-                        </div>
-                     </div>
-
-                     <div class=" col-md-3 card text-center work py-5 px-4" id="portfolio" style="width: 18rem;">
-                        <img class="card-img-top" src="CalculadoraPython.png" alt="">
-                        <div class="card-body">
-                        <h5 class="card-title">Calculadora</h5>
-                        <p class="card-text">Criado em Python utilizando Tkinter como biblioteca principal.</p>
-                        <a href="https://github.com/guilaradev/CalculadoraPython" target="_blank" class="btn btn-primary">Acessar</a>
-
-                        </div>
-                     </div>
-
-
-                     <div class=" col-md-3 card text-center work py-5 px-4" id="portfolio" style="width: 18rem;">
-                        <img class="card-img-top" src="javaScriptPureTodoList.png" alt="">
-                        <div class="card-body">
-                        <h5 class="card-title">Todo List em JavaScript Puro</h5>
-                        <p class="card-text">Criado em JS puro nao tem conexão com banco de dados, mas uso o cacheamento do navegador para que a lista seja criada.
-                        </p>
-                        <a href="https://guilaradev.github.io/todo-list-pure-js/" target="_blank" class="btn btn-primary">Acessar</a>
-
-                        </div>
-                     </div>
-                  </div>
-               </section>
-               <footer id="footer" class="pt-5 px-3">
-                  <div id="contact_us">
-                     <div class="py-3 px-2">
-                        <h1 class="text-uppercase font-staat font-size-34">Contato</h1>
-                     </div>
-                     <div class="col-md-12">
-                        <form action="https://formsubmit.co/guilherme.lara.sec@outlook.com" method="POST">
-                           <fieldset>
-                              <!-- Name input-->
-                              <div class="form-group">
-                                 <label class="col-md-3 control-label" for="name">Nome</label>
-                                 <div class="col-md-9">
-                                    <input id="name" name="name" type="text" placeholder="Seu nome" class="form-control">
-                                 </div>
-                              </div>
-                              <!-- Email input-->
-                              <div class="form-group">
-                                 <label class="col-md-3 control-label" for="email">E-mail</label>
-                                 <div class="col-md-9">
-                                    <input id="email" name="email" type="text" placeholder="Seu email" class="form-control">
-                                 </div>
-                              </div>
-                              <!--- Assunto -->
-                              <div class="form-group">
-                                 <label class="col-md-3 control-label" for="message">Assunto</label>
-                                 <div class="col-md-9">
-                                    <input id="subject" name="subject" type="text" placeholder="Assunto" class="form-control">
-                                 </div>
-                              </div>
-                              <!-- Message body -->
-                              <div class="form-group">
-                                 <label class="col-md-3 control-label" for="message">Mensagem</label>
-                                 <div class="col-md-9">
-                                    <textarea class="form-control" id="message" name="message" placeholder="Entre com sua mensagem aqui..." rows="5"></textarea>
-                                 </div>
-                              </div>
-                              <!-- Form actions -->
-                              <div class="form-group">
-                                 <div class="col-md-6 text-right">
-                                    <button type="submit" class="btn btn-dark btn-lg">Enviar</button>
-                                 </div>
-                              </div>
-                           </fieldset>
-                           <input type="hidden" name="_next" value="https://guilaradev.github.io/guilhermerdev.io/obrigado.html">
-                        </form>
-                     </div>
-                     <div class="row py-5">
-                        <div class="col-sm-6">
-                           <h1 class="font-staat w-50 font-size-16 text-black-50">Entre em contato comigo !  <i style="font-size: 24px;" class="fas fa-smile-beam"></i> </h1>
-                           <a href="https://api.whatsapp.com/send?phone=5514996430356" target="_blank" class="whatsapp"><i style="font-size: 36px; color: #4F4F4F; margin-right: 4px;" class="fas fa-phone"></i></a>
-                           <a href="mailto:guilherme.lara.sec@outlook.com"><i style="font-size: 36px; color: #4F4F4F;"" class="fas fa-envelope"></i></a>
-                        </div>
-                        <div class="col-sm-6 py-4 px-4">
-                           <form action="" class="py-3">
-                              <img class="img-fluid" id="img-gif" src="backend-dev.gif">
-                           </form>
-                        </div>
-                     </div>
-                     <div class="row bgcolor-footer py-4">
-                        <div class="col-sm-4 my-5 text-center">
-                           <h6 class="font-staat font-size-16 text-black-50">&copy;2022 guilaradev. Todos os Direitos Reservados</h6>
-                        </div>
-                        <div class="col-sm-4 my-4 text-center">
-                           <div class="footer-title">
-                              <a href="#" class="navbar-brand font-staat font-size-40 text-dark">Guilherme Lara</a>
-                              <p class="description font-staat font-size-16 text-black-50 text-uppercase">Desenvolvedor Back-End</p>
-                           </div>
-                        </div>
-                        <div class="col-sm-4 my-5 text-center">
-                           <a style="font-size: 25px; color: #4F4F4F;" href="https://www.facebook.com/gui.a.lara" target="_blank"><span class="mr-2"><i class="fab fa-facebook-f"></i></span></a>
-                           <a style="font-size: 25px; color: #4F4F4F;" href="https://twitter.com/guilaradev" target="_blank"><span class="mr-2"><i class="fab fa-twitter"></i></span></a>
-                           <a style="font-size: 25px; color: #4F4F4F;" href="https://www.instagram.com/guilaradev/?hl=pt-br" target="_blank"><span class="mr-2"><i class="fab fa-instagram"></i></span></a>
-                           <a style="font-size: 25px; color: #4F4F4F;" href="https://github.com/guilaradev" target="_blank"><span class="mr-2"><i class="fab fa-github"></i></span></a>
-                           <a style="font-size: 25px; color: #4F4F4F;" href="https://www.linkedin.com/in/guilaradev" target="_blank"><span class="mr-2"><i class="fab fa-linkedin"></i></span></a>
-                        </div>
-                     </div>
-                  </div>
-               </footer>
+            <div class="navigation-close">
+                <span class="close-first"></span>
+                <span class="close-second"></span>
             </div>
-         </div>
-      </main>
-      <script src="vendor/jquery-3.3.1.min.js"></script>
-      <script src="vendor/jquery.maskedinput.min.js"></script>
-      <script src="vendor/owl.carousel.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/fontawesome.min.js" integrity="sha512-5qbIAL4qJ/FSsWfIq5Pd0qbqoZpk5NcUVeAAREV2Li4EKzyJDEGlADHhHOSSCw0tHP7z3Q4hNHJXa81P92borQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src="./vendor/typed/typed.min.js"></script>
-      <script src="./index.js"></script>
-   </body>
+            <div class="navigation-links">
+                <a href="#" data-text="INICIO" id="home-link" >INICIO</a>
+                <a href="#" data-text="SOBRE" id="about-link" >SOBRE</a>
+                <a href="#" data-text="PORTFOLIO" id="portfolio-link" >PORTFOLIO</a>
+                <a href="#" data-text="CONTATO" id="contact-link" >CONTATO</a>
+            </div>
+        </div>
+        <!--Navigator-Fullscreen END-->
+          <!--Home Page-->
+        <!--Menubar-->
+        <div id="navigation-bar">
+            <img src="images/logo.png" alt="logo">
+            <div class="menubar">
+                <span class="first-span"></span>
+                <span class="second-span"></span>
+                <span class="third-span"></span>
+            </div>
+        </div>
+        <!--Menubar End-->
+          <!--Header-->
+        <div id="header">
+            <div id="particles"></div>
+              <!--Social Media Links-->
+            <div class="social-media-links">
+               <a href="https://www.instagram.com/guilaradev/?hl=pt-br" target="_blank"><img src="images/instagram logo.png" class="social-media" alt="instagram-logo"></a><!--Your instagram homepage link inser in place of "#"-->
+                <a href="https://github.com/guilaradev" target="_blank"><img src="images/github.png" class="social-media" alt="facebook-logo"></a>
+                <a href="https://www.linkedin.com/in/guilaradev/" target="_blank"><img src="images/linkedin logo.png" class="social-media" alt="linkedin-logo"></a>
+                <a href="https://twitter.com/guilaradev" target="_blank"><img src="images/twitter logo.png" class="social-media" alt="twitter-logo"></a>
+
+            </div>
+            <!--Social Media Links end-->
+            <div class="header-content">
+                <div class="header-content-box">
+                <div class="firstline"><span class="color">Guilherme </span>Lara</div>
+                <div class="secondline">
+                Eu sou
+            <span class="txt-rotate color" data-period="1200"data-rotate='[ " Desenvolvedor Back-End.", " Cientista de Dados.", "Business Partner." ]'></span>
+            <span class="slash">|</span>
+        </div>
+                    <div class="contact">
+                <a href="mailto:guilherme.lara.sec@outlook.com"><img src="images/mail.png" alt="email-pic" class="contactpic"></a><!--Your email Id write in place of "#"-->
+                <a href="https://api.whatsapp.com/send?phone=5514996430356"><img src="images/wpp.png" alt="phone-pic" class="contactpic"></a><!--Your telephone number Id write in place of "#"-->
+                    </div>    
+            </div>
+            </div>
+            <!--header image-->
+            <div class="header-image">
+                
+            </div>
+            <!--header image end-->
+        </div>
+           <!--Header End-->
+        <!--HomePage End-->
+        <!--Main-Section End-->
+        <!--about-->
+        <div id="about">
+            <!--about content-->
+            <div id="about-content">
+                <div class="about-header">
+                    Sobre <span class="color">Mim</span>
+                    <span class ="header-caption">Um pouco sobre <span class="color"> mim.</span></span>
+                </div>
+                <div class="about-main">
+            <div class="about-first-paragraph wow">
+            <!--about description-->
+               <span class="about-first-line">
+                   Eu sou 
+                    <span class="color">Desenvolvedor Back End </span>
+                     de Bauru , Sp </span>
+                     <br>
+               <span class="about-second-line">Olá, meu nome é Guilherme Lara, sou desenvolvedor de sistemas e iniciei minha vida na área da programação como <span style=" color: #bd4616;">Front-End</span>, apoś alguns anos de experiência resolvi ir para a área de <span style=" color: #bd4616;">Back-End</span>.
+               <span class="about-second-line">Hoje estou em busca de novos conhecimentos na área de <span style=" color: #bd4616;">I.A , M.L, Data Science e Engenharia de Software</span>.</span>
+               <span>Sou cursor de Ciência da Computação na Unip Bauru.</span></span>
+               <div class="cv">
+                <a href="https://drive.google.com/file/d/1tpD-kXzOBu3VYnzyVRjom-wXVDnCCFWm/view" target="_blank"><button>Visualizar <span class="colors">CV</span></button></a>
+            </div>
+            </div>
+            <!--about picture-->
+            <div class="about-img">
+                <img src="images/about.jpg" alt="Guilherme de Almeida Lara">
+            </div>
+            </div>
+    
+            </div>
+            <!--services start-->
+            <div id="services">
+               
+            <!--services header-->
+                    <div class="services-heading wow">
+                        <span class="color">Meus</span> Serviços
+                    </div>
+            <!--services header end-->
+            <!--services content-->
+                    <div class="services-content">
+                           <div class="service-one service wow">
+                               <div class="service-img">
+                               <img src="images/bd.png" alt="service-one">
+                               </div>
+                               <div class="service-description">
+                                <h2>Administração e desenvolvimento de Banco de Dados</h2>
+                                <p>Gerenciamento do BD para sistemas visando a segurança, e, estruturação de um banco consistente.</p>
+                               </div>
+                           </div>
+                           <div class="service-two service wow">
+                               <div class="service-img">
+                               <img src="images/coding.png" alt="service-two">
+                               </div>
+                               <div class="service-description">
+                                <h2>Desenvolvimento</h2>
+                                <p>Desenvolvimento de sistemas usando as linguagens precisas para que o sistema seja seguro e escalável</p>
+                               </div>
+                           </div>
+                           <div class="service-three service wow">
+                            <div class="service-img">
+                               <img src="images/api.png" alt="service-three">
+                            </div>
+                            <div class="service-description">
+                                <h2>Integrações</h2>
+                                <p>Integrações entre sistemas e API's.</p>
+                            </div>
+                        </div>
+                        <div class="service-three service wow">
+                            <div class="service-img">
+                               <img src="images/manutencao.png" alt="service-three">
+                            </div>
+                            <div class="service-description">
+                                <h2>Manutenção de Sites</h2>
+                                <p>Consultorias para sites e suas funcionalidades para melhores aplicações de manutenções e diagramações.</p>
+                            </div>
+                        </div>
+                        <div class="service-three service wow">
+                            <div class="service-img">
+                               <img src="images/endpoint.png" alt="service-three">
+                            </div>
+                            <div class="service-description">
+                                <h2>Business Partner</h2>
+                                <p>Gestor de Negócios em sistemas de BPM para melhor gestão empresarial, tendo como foco a valorização do tempo por processos</p>
+                            </div>
+                        </div>
+
+                        <div class="service-three service wow">
+                            <div class="service-img">
+                               <img src="images/bulb.png" alt="service-three">
+                            </div>
+                            <div class="service-description">
+                                <h2>Endpoints e documentação</h2>
+                                <p>Desenvolver endpoints e criar documentação descrevendo recursos e métodos para acelerar manutenção e atualizações.</p>
+                            </div>
+                        </div>
+
+                    </div>
+            </div>
+            <!--services content end-->
+            <!--services end-->
+            <div id="skills">
+                <div class="skills-header">
+                     Minhas <span class="color"> Habilidades</span>
+                </div>
+                <div class="skills-content " style="text-align: center;">
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        PHP
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="html-progress wow"></div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                      Javascript
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="js-progress wow"></div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        Node.Js
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="adobe-progress wow"></div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        Java
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="php-progress wow"></div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        Python
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="jquery-progress wow"></div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        Banco de Dados
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="seo-progress wow"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+             <div class="footer-text">
+                 <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px">Guilherme Lara
+             </div>
+            </div>
+    <!--copyright-section-->
+        </div>
+        <!--about end-->
+        <!--portfolio-->
+        <div id="portfolio">
+            <div class="portfolio-header"> <span class="color"> Meu </span> Portfólio
+            <span class ="header-caption"> Algun de meus <span class="color"> projetos</span></span></div>
+             <div id="portfolio-content">
+                 <div class="portfolio portfolio-first">
+                     <div class="portfolio-image">
+                        <img src="images/sistemaDjango.png" alt="portfolio-first">
+                     </div>
+                     <div class="portfolio-text">
+                         <h2>Sistema simples de galeria de fotos</h2>
+                         <p>Sistema criado em Python com Django integrando AWS usando Bucket S3</p>
+                         <div class="button"><a href="https://github.com/guilaradev/aws-s3-jurid" target="_blank"><button><span class="index"> Ver Projeto<i class="gg-arrow-right"></i></span></button></a></div>
+                     </div>
+                 </div>
+                 <div class="portfolio portfolio-second">
+                    <div class="portfolio-image">
+                        <img src="images/memoryTest.png" alt="portfolio-second">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Script simples para verificar a memoria do computador</h2>
+                        <p>Criado em NodeJs, roda direto no console.</p>
+                        <div class="button"><a href="https://github.com/guilaradev/StatsComputerMemory" target="_blank"><button><span class="index">Ver Projeto<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+             
+                <div class="portfolio portfolio-third">
+                    <div class="portfolio-image">
+                        <img src="images/CalculadoraPython.png" alt="portfolio-third">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Calculadora</h2>
+                        <p>Criado em Python utilizando Tkinter como biblioteca principal.</p>
+                        <div class="button"><a href="https://github.com/guilaradev/CalculadoraPython" target="_blank"><button><span class="index"> Ver Projeto<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-fourth">
+                    <div class=" portfolio-image">
+                        <img src="images/javaScriptPureTodoList.png" alt="portfolio-fourth">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Todo List</h2>
+                        <p>Criado em JS puro nao tem conexão com banco de dados, mas uso o cacheamento do navegador para que a lista seja criada.</p>
+                        <div class="button"><a href="https://guilaradev.github.io/todo-list-pure-js/" target="_blank"><button><span class="index"> Ver Projeto<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+
+
+                <div class="portfolio portfolio-fourth">
+                    <div class=" portfolio-image">
+                        <img src="images/restAPI.png" alt="portfolio-fourth">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>API REST FULL em Node.JS</h2>
+                        <p>Criado em NodeJs é a base de uma API Rest Full .</p>
+                        <div class="button"><a href="https://guilaradev.github.io/todo-list-pure-js/" target="_blank"><button><span class="index"> Ver Projeto<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                 </div>
+                    <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+                <div class="footer-text">
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Guilherme Lara
+                </div>
+               </div>
+       <!--copyright-section-->
+             </div>
+        <!--portfolio end-->
+        <!--contact-->
+     <div id="contact">
+       
+         <div class="contact-header">Contato <span class="color"></span>
+        <div class="contact-header-caption"> <span class="color"> Me envie uma</span> mensagem.</div></div>
+        <div class="contact-content">
+            <!--Contact form-->
+             <div class="contact-form">
+                 <div class="form-header">
+                     Entre em contato pelo Email
+                 </div>
+                 <form action="https://formsubmit.co/guilherme.lara.sec@outlook.com" method="POST">
+                   <div class="input-line">
+                        <input  id="name" name="name" type="text" placeholder="Seu nome" class="input-name form-control">
+                        <input id="email" name="email" type="email" placeholder="Seu email"  class="input-name form-control">
+                    </div>
+                    <input type="text" name="subject" id="subject" placeholder="Assunto" class="input-subject form-control">
+                    <textarea id ="body" name="message" class="input-textarea" placeholder="Entre com sua mensagem aqui..." rows="5"></textarea>
+                    <button type="submit" id ="submit" value="send">Enviar</button>
+                
+                <input type="hidden" name="_next" value="https://guilaradev.github.io/guilhermerdev.io/obrigado.html">
+                 </form>
+             </div>
+            <!--Contact form-->
+            <!--Contact information-->
+             <div class="contact-info">
+                <div class="contact-info-header">
+                    Informações de Contato
+                </div>
+                <div class="contact-info-content">
+                <div class="contect-info-content-line">
+                    <img src="./images/icon-name.png" class="icon" alt="name-icon">
+                    <div class="contact-info-icon-text">
+                        <h6>Nome</h6>
+                        <p>Guilherme de Almeida Lara</p>
+                  </div>
+                </div>
+                <div class="contect-info-content-line">
+                  <img src="./images/icon-location.png" class="icon" alt="location-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Localização</h6>
+                      <p>Bauru, SP</p>
+                </div>
+              </div>
+              <div class="contect-info-content-line">
+                  <img src="./images/icon-phone.png" class="icon" alt="phone-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Telegone</h6>
+                      <p>+55 (014) 99643-0356</p>
+                </div>
+              </div>
+              
+              <div class="contect-info-content-line">
+                  <img src="./images/icon-email.png" class="icon" alt="email-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Email</h6>
+                      <p>guilherme.lara.sec@outlook.com</p>
+                </div>
+              </div>
+                </div>
+            <!--Contact information end-->
+           </div>
+        </div>
+                    <!--copyright-section You Can Remove After Downloading-->
+                    <div class="footer">
+                        <div class="footer-text">
+                            <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Guilherme Lara
+                        </div>
+                       </div>
+               <!--copyright-section-->
+     </div>
+        <!--contact end-->
+    </div>
+    <!--all the divisions-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/index.js"></script>
+    <!--particles script-->
+    <script>
+  particlesJS("particles", {"particles":{"number":{"value":40,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+    </script>
+
+</body>
 </html>
