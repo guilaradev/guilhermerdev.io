@@ -411,7 +411,7 @@ body{
     100%{ transform : translateX(100%) }
 }
 .color{
-    color: #bd4616;
+    color: #3b3939;
     transition: all .4s ease;
 }
 #about{
@@ -1401,7 +1401,7 @@ For devices with smaller width like mobile phone
     #breaker{
         height: 50vh;
         width: 200%;
-        background-color: #bd4616;
+        background-color: #3b3939;
         opacity: 1;
         animation: breakeranimate 2s linear;
         display: none;
