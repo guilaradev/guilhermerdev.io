@@ -682,6 +682,32 @@ body{
    position: relative;
    overflow: hidden;
 }
+.api-progress{
+    position: absolute;
+    top:10%;
+    left:1%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease;
+    width:45%;
+    border-radius: 10px;
+    background: #bd4616;
+ }
+ .aws-progress{
+    position: absolute;
+    top:10%;
+    left:1%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease;
+    width:35%;
+    border-radius: 10px;
+    background: #bd4616;
+ }
 .html-progress{
     position: absolute;
     top:10%;
