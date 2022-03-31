@@ -1382,6 +1382,9 @@ For devices with smaller width like mobile phone
 
 
 @media only screen and (max-width: 550px){
+    .obrigado-img{
+        width: 250px;
+    }
     .header-content{
         height: 100vh;
         width: 100%;
